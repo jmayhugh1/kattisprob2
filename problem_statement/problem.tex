@@ -1,0 +1,33 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{Gridville Urban Planning Problem}
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section*{Background}
+
+In the city of Gridville, urban planners use a digital grid to model urban areas, where each cell represents a potential building site. The grid is represented by an \(n \times n\) binary matrix where \(1\) indicates an existing building and \(0\) indicates an empty plot. Planners are considering developing one empty plot to enhance urban connectivity.
+
+\section*{Problem Description}
+
+You are given an \(n \times n\) binary matrix representing Gridville. You are allowed to change at most one \(0\) to a \(1\), symbolizing the construction of a new building on an empty plot. Determine the size of the largest possible contiguous urban area (island of \(1\)s) in the grid after applying this operation. An urban area (island) is defined as a group of connected buildings (\(1\)s), where connectivity is established horizontally and vertically (not diagonally).
+
+\section*{Input}
+
+\begin{itemize}
+    \item The first line contains an integer \(n\), the size of the grid (\(1 \leq n \leq 400\)).
+    \item This is followed by \(n\) lines, each containing \(n\) characters ('0' or '1'), representing the rows of the grid.
+\end{itemize}
+
+\section*{Output}
+
+\begin{itemize}
+    \item Output a single integer, the size of the largest urban area (island of \(1\)s) that can be achieved by changing at most one \(0\) to a \(1\).
+\end{itemize}
+
+\end{document}
